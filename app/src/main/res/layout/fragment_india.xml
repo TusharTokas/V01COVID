@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.IndiaFrag">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardElevation="5dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ToTal Cases"
+                android:fontFamily="@font/lato_bold"
+                android:id="@+id/totalCase"
+                android:textColor="#1B1A1B"
+                android:textSize="20sp"
+                android:padding="5dp"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00000"
+                android:fontFamily="@font/lato_bolditalic"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:textColor="#1B1A1B"
+                android:id="@+id/totalCaseInd"
+                android:layout_alignParentRight="true"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ToTal Confimed Case Indian"
+                android:fontFamily="@font/lato_bold"
+                android:id="@+id/totalDeath"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:textColor="#201E1E"
+                android:layout_below="@+id/totalCaseInd"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00000"
+                android:fontFamily="@font/lato_bolditalic"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:textColor="#171716"
+                android:id="@+id/totalConfCaseInd"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/totalCase"
+                >
+            </TextView>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ToTal Confimed Case Foreign"
+                android:fontFamily="@font/lato_bold"
+                android:id="@+id/totalRec"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:textColor="#F44336"
+                android:layout_below="@+id/totalConfCaseInd"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00000"
+                android:fontFamily="@font/lato_bolditalic"
+                android:textSize="20sp"
+                android:textColor="#F44336"
+                android:padding="5dp"
+                android:id="@+id/totalConfCaseFor"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/totalConfCaseInd"
+                >
+            </TextView>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ToTal Recovered "
+                android:fontFamily="@font/lato_bold"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:textColor="#3B833E"
+                android:layout_below="@+id/totalConfCaseFor"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00000"
+                android:fontFamily="@font/lato_bolditalic"
+                android:textSize="20sp"
+                android:textColor="#227125"
+                android:padding="5dp"
+                android:id="@+id/totalCaseRec"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/totalConfCaseFor"
+                >
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:text="ToTal Death "
+                android:fontFamily="@font/lato_bold"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:textColor="#F63B2D"
+                android:layout_below="@+id/totalCaseRec"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00000"
+                android:fontFamily="@font/lato_bolditalic"
+                android:textSize="20sp"
+                android:textColor="#EA2F22"
+                android:padding="5dp"
+                android:id="@+id/totalDeathInd"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/totalCaseRec"
+                >
+            </TextView>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+android:background="#F3ECEC"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerView"
+            >
+
+
+
+
+
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

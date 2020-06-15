@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.HomeFrag">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    app:cardElevation="5dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+
+
+        >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="ToTal Cases"
+    android:fontFamily="@font/lato_bold"
+    android:id="@+id/totalCase"
+     android:textSize="20sp"
+    android:padding="5dp"
+    >
+</TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00000"
+            android:fontFamily="@font/lato_bolditalic"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:id="@+id/totalCaseN"
+            android:layout_alignParentRight="true"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ToTal Death"
+            android:fontFamily="@font/lato_bold"
+            android:id="@+id/totalDeath"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:textColor="#F62617"
+            android:layout_below="@+id/totalCase"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00000"
+            android:fontFamily="@font/lato_bolditalic"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:textColor="#FF2F1F"
+            android:id="@+id/totalCaseD"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/totalCase"
+            >
+        </TextView>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ToTal Recover"
+            android:fontFamily="@font/lato_bold"
+            android:id="@+id/totalRec"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:textColor="#3D683F"
+            android:layout_below="@+id/totalDeath"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00000"
+            android:fontFamily="@font/lato_bolditalic"
+            android:textSize="20sp"
+            android:textColor="#206723"
+            android:padding="5dp"
+            android:id="@+id/totalCaseR"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/totalDeath"
+            >
+        </TextView>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="10dp"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/back_solid"
+    >
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       app:cardCornerRadius="20dp"
+       android:layout_height="wrap_content"
+       app:cardElevation="5dp"
+
+       app:cardBackgroundColor="#2BD6A6"
+    >
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+       android:padding="10dp"
+           >
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:padding="10dp">
+
+
+               <TextView
+                   android:id="@+id/q1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/seguisb"
+                   android:text="What is covid-19?"
+                   android:textColor="#0B0A0A"
+                   android:textSize="20sp"></TextView>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="5dp"
+                   android:fontFamily="@font/seguisb"
+                   android:text="@string/ansSec"
+                   android:textSize="16sp"></TextView>
+           </LinearLayout>
+
+       </LinearLayout>
+   </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
